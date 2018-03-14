@@ -17,8 +17,8 @@ services:
     networks:
       - onlyoffice
     volumes:
-       - /var/www/onlyoffice/Data
-       - /var/log/onlyoffice
+       - /app/onlyoffice/DocumentServer/data:/var/www/onlyoffice/Data
+       - /var/log/onlyoffice/documentserver:/var/log/onlyoffice
        - /var/lib/onlyoffice/documentserver/App_Data/cache/files
        - /var/www/onlyoffice/documentserver-example/public/files
        - /usr/share/fonts /usr/share/fonts
